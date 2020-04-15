@@ -5,6 +5,6 @@ public class UI{
         System.out.print("Number of Disks: ");
         int numDisks = myScan.nextInt();
         myScan.close();
-        Algorithm.game(numDisks);
+        Algorithm.initCol1(numDisks);
     }
 }
