@@ -8,7 +8,20 @@ public class Algorithm{
         for (int i = numDisks; i > 0; i--){ //initializing the first "column"
             col1.add(i);
         }
+    }
 
-
+    //always move in this order(either way): col1-col2, col1-col3, col2-col3
+    public static void loopAlgorithm(int numDisks){
+        if (numDisks%2 == 0){ //even number of disks
+            //col1-col2
+            if (col2.isEmpty() || col1.get(col1.size()-1) < col2.get(col2.size()-1)){ //col1 to col2
+                col2.add(col1.get(col1.size()-1));
+                col1.remove(col1.size()-1);
+            }
+            else if (col1.isEmpty() || col1.get(col1.size()-1) > col2.get(col2.size()-1)){ //col2 to col1
+                col1.add(col2.get(col2.size()-1));
+                col2.remove(col2.size()-1);
+            }
+        }
     }
 }

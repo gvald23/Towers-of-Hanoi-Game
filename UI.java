@@ -1,10 +1,10 @@
 import java.util.Scanner;
 public class UI{
-    public static void userInput(){
+    public static int userInput(){
         Scanner myScan = new Scanner(System.in);
         System.out.print("Number of Disks: ");
         int numDisks = myScan.nextInt();
         myScan.close();
-        Algorithm.initCol1(numDisks);
+        return numDisks;
     }
 }
