@@ -3,6 +3,7 @@ public class Main{
         System.out.println("Welcome to Towers of Hanoi.");
         int numDisks = UI.userInput();
         Algorithm.initCol1(numDisks);
-        //Algorithm.loopAlgorithm(numDisks);
+        System.out.println("\n\n\n\n");
+        Algorithm.loopAlgorithm(numDisks);
     }
 }
