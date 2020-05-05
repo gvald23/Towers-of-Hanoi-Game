@@ -1,2 +1,3 @@
-# Towers-of-Hanoi-Game
-An algorithm solving the Towers of Hanoi Game
+# Towers-of-Hanoi-Algorithm
+Algorithms for the Towers of Hanoi Game
+By Giancarlo Valdivia
